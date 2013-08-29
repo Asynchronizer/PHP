@@ -28,7 +28,7 @@ string  $api_password   Your Raide API Password.
 Example(s)
 
 ```php
-$Asynchronizer = new Asynchronizer( RAIDE_ACCOUNT_ID, RAIDE_API_KEY, RAIDE_API_PASSWORD );
+$Asynchronizer = new Asynchronizer( ACCOUNT_ID, API_KEY, API_PASSWORD );
 ```
 
 ---
