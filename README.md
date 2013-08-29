@@ -1,4 +1,4 @@
-## RaideIO's PHP Traffic API
+## Asynchronizer's PHP API
 
 ---
 
