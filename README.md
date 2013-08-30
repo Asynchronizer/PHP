@@ -20,9 +20,9 @@ submit( $base64_queue, $requester )
 Parameter(s)
 
 ```
-int     $account_id     Your Raide Account ID.
-string  $api_key        Your Raide API Key.
-string  $api_password   Your Raide API Password.
+int     $account_id     Your Asynchronizer Account ID.
+string  $api_key        Your Asynchronizer API Key.
+string  $api_password   Your Asynchronizer API Password.
 ```
 
 Example(s)
@@ -33,7 +33,7 @@ $Asynchronizer = new Asynchronizer( ACCOUNT_ID, API_KEY, API_PASSWORD );
 
 ---
 
-### submit() - Submit a new Support Ticket.
+### submit() - Submit all collected Asynchronous requests.
 
 Parameter(s)
 
