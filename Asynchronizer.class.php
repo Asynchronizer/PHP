@@ -4,7 +4,7 @@
  * Asynchronizer API
  *
  * @funcs	__construct( $account_id, $api_key, $api_password )
- *		submit( $requester, $base64_queue )
+ *		submit( $base64_queue, $requester )
  */
 
 class Asynchronizer
@@ -155,18 +155,18 @@ class Asynchronizer
 	/**
 	 * Submit a Queue.
 	 *
+	 * @param	string	$base64_queue	A base64-encoded string provided by the Asynchronizer JavaScript file..
 	 * @param	mixed	$requester	Either an e-mail address, or an array {id, email, name}.
-	 * @param	string	$base64_queue	A base64-encoded string provided by the RaideIOLogger Object.
 	 * @return	array
 	 */
 	
-	public function submit( $requester, $base64_queue )
+	public function submit( $base64_queue, $requester = NULL )
 	{
 		try
 		{
 			$parameters = array( 
 				'queue'		=> $base64_queue,
-				'requester' => $requester
+				'requester'	=> $requester
 			);
 			
 			// Parse the results of this cURL request.
